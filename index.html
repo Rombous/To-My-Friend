@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Aniv Guyss<3</title>
+    <!-- Lilita One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet"> 
+    <!-- Black And White Picture -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap" rel="stylesheet">
+    <!-- ini link font -->
+
+
+    <link rel="website icon" type="jpg" href="alat dan bahan/icon.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="project1.css">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+        <h1 class="tittle" style="text-align: center">HAPPY ANNIVERSARY GUYSSSS</h1>
+        <br>
+        <h6>Klik Foto Masing-Masing Yaaa :)</h6>
+        <div class="container">
+            <ul class="foto">
+                <li>
+                    <a id="login-user" data-action="Ajeng" data-password="JsnfKfneoajengjKfnel" href="#pass">
+                        <img src="alat dan bahan/satu banding satu/ajeng 1.jpg" alt="Ajeng">
+                        <span>Ajeng</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a id="login-user" data-action="Andi" data-password="NdjskandandiLtmrplaPT" href="#pass">
+                        <img src="alat dan bahan/satu banding satu/andi 1.jpg" alt="Andi">
+                        <span>Andi</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a id="login-user" data-action="Alvia" data-password="BfhrjJalviaEidiPBdkf" href="#pass">
+                        <img src="alat dan bahan/satu banding satu/pia 1.jpg" alt="Alvia">
+                        <span>Alvia</span>
+                    </a>
+                </li>
+
+                
+
+                <div class="clear"></div>
+
+            </ul>
+
+        </div>
+
+        <div class="container2">
+            <ul class="gambar">
+                <li>
+                    <a id="login-user" data-action="Ayun" data-password="WueifpPdjeayunPfkrmFG" href="#pass">
+                        <img src="alat dan bahan/satu banding satu/ayun 1.jpg" alt="Ayun">
+                        <span>Ayun</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a id="login-user" data-action="Ririn" data-password="JdkelOdjririnUrilPdjL" href="#pass">
+                        <img src="alat dan bahan/satu banding satu/ririn 1.jpg" alt="Ririn">
+                        <span>Ririn</span>
+                    </a>
+                </li>
+                <div class="clearr"></div>
+            </ul>
+        </div>
+
+        <div class="overlay" id="pass">
+            <a href="#" class="close">X</a>
+            <div class="wrapper">
+                <div class="password">
+                    <div class="titel">
+                        Masukin Passwordnya
+                    </div>
+                    <form action="" method="post" id="submit">
+                        <div class="input_wrap">
+                            <label for="input_text"></label>
+                            <div class="input_field">
+                                <input type="password" class="input" id="input_password">
+                            </div>
+                        </div>
+    
+                        <div class="input_wrap">
+                            <span class="error_msg">Waduh passwordnya salah tuh.</span>
+                            <input type="submit" value="ENTER" class="btn" id="login-btn">
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+    
+        </div>
+
+        <script>
+        window.addEventListener('load', () => {
+        Swal.fire({
+            title: 'Do you want to play music in the background?',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes',
+            cancelButtonText: 'No',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.querySelector('.song').play();
+            }
+            });
+        });
+        </script>
+
+
+        <script>
+
+            let correctPassword = "";
+            let actionFunction = "";
+            const loginUser = document.querySelectorAll('#login-user');
+            const loginButton = document.getElementById('login-btn');
+            const input_password = document.getElementById("input_password");
+            const error_msg = document.querySelector(".error_msg")
+
+            $("#submit").submit(function(e) {
+                e.preventDefault();
+
+                if (input_password.value.length < 1 || input_password.value != correctPassword) {
+                    error_msg.style.display = "inline-block";
+                    input_password.style.border = "1px solid #f74040";
+                    return false;
+                }
+                error_msg.style.display = "none";
+            });
+            var input_fields = document.querySelectorAll(".input");
+
+            input_fields.forEach(function (input_item) {
+                input_item.addEventListener("input", function () {
+                    if (input_password.value.length > 0) {
+                        input_password.style.border = "1px solid #1dbf73";
+                    }
+                })
+            });
+
+            loginUser.forEach(log => {
+                log.addEventListener('click', () => {
+                    correctPassword = log.getAttribute('data-password');
+                    actionFunction = log.getAttribute('data-action')
+                    console.log(correctPassword)
+                    console.log(actionFunction)
+                    input_password.value = "";
+                    input_password.focus();
+                });
+            });
+
+            loginButton.addEventListener('click', () => {
+                console.log('hello')
+                if (input_password.value === correctPassword){
+                    console.log('helo')
+                    if (typeof window[actionFunction] === "function") {
+                        window[actionFunction]();
+                    };
+                };
+            });
+
+            function Ajeng(){
+                Swal.fire({
+                    title: "For Ajeng!!",
+                    text : "Gua gatau cukk mau ngetik apa ke lu. Tapi kalo di inget² dulu tuh gua ga pernah nyangka bakal temenan sama lu.",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Next",
+                    denyButtonText: `lihat Selengkapnya...`,
+                    confirmButtonColor: '#3085d6',
+                    denyButtonColor : 'grey',
+                    cancelButtonColor : 'red',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "penutup.html";
+                    } else if (result.isDenied) {
+                        Swal.fire({
+                        title: "For Ajeng!!",
+                        text : "Tapi intinya gua mau bilang makasih banyak ke lu karna lu pernah jemput gua kerumah kalo kita mau main. Mungkin buat lu ngga seberapa, tapi buat gua tuh berarti banget. Soalnya gua tu suka beranggapan kalo pas temen² gua main terus ngga ngajak gua itu karna gua ga bisa bawa motor, kayak kalo misalnya ngga ada motor tapi dijemput temen seenggaknya harusnya gua yang bawa dong, tapi ya karna gua ga bisa bawa jadi mungkin orang gamau ngajak gua wkwkwk. Yaa walaupun itu cuma asumsi gua, tapi entah kenapa gua ngerasa ada benernya gitu. Makanya kalo lu atau alpia yang suka jemput gua, kadang gua ngerasa suka ngga enak, kepikiran aja gitu, kira² kalian marah ngga ya sama gua yang bisanya nebeng doang. Jadi yaa, makasih banyak yaa. Semangat ya belajarnya, semoga lu beneran bisa ke jepang, amiinn",
+                        confirmButtonText : "back",
+                    }).then((result) => {
+                        if(result.isConfirmed) {
+                            Ajeng()
+                        }
+                    });
+                    }
+                });
+            };
+
+            function Andi(){
+                Swal.fire({
+                    title: "For Andi!!",
+                    text : "Haduuu bingung nih ndi mau ngetik apaaa, buntu banget ndii, soalnya andi tu anak bae² gitu.",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Next",
+                    denyButtonText: `lihat Selengkapnya...`,
+                    confirmButtonColor: '#3085d6',
+                    denyButtonColor : 'grey',
+                    cancelButtonColor : 'red',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "penutup.html";
+                    } else if (result.isDenied) {
+                        Swal.fire({
+                        title: "For Andi!!",
+                        text : "Tapi asli andi tu kayak pelengkap yang sangat kita butuhkan, soalnya kan di circle kita ada alpia yang aura negatifnya berasa banget kan, nah dengan adanya andi ni jadi penetral aura negatif dia gitu. Dari gua sii semoga andi ngga terpengaruh aura negatif dari alpia yaa😇. Makasi ya ndi udaa ngejaga kita dari aura negatifnya alpia dan makasi juga uda ngenalin ririn ke kita, soalnya gua ga terlalu suka sama circle yang isinya ganjil wkwkwk. Maaf ya ndi cuma bisa ngetik begini, asli bingung bangett😭😭",
+                        confirmButtonText : "back",
+                    }).then((result) => {
+                        if(result.isConfirmed) {
+                            Andi()
+                        }
+                    });
+                    }
+                });
+            };
+
+            function Alvia(){
+                Swal.fire({
+                    title: "For Alvia!!",
+                    text : "Maaf yaa pii, maaf bangettt, maaf gua ga bisa hadir pas lu lagi sedih, maaf gua ga bisa nemenin lu pas lu lagi sedih. Sampe sekarang gua masih suka kepikiran. Dulu waktu almarhumah ibu lu meninggal gua ngga dateng kesana karna gua lagi diluar, padahal seharusnya gua bisa kesana karna ya waktu itu ga penting² banget, harusnya gua memprioritaskan ke lu dulu.",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Next",
+                    denyButtonText: `lihat Selengkapnya...`,
+                    confirmButtonColor: '#3085d6',
+                    denyButtonColor : 'grey',
+                    cancelButtonColor : 'red',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "penutup.html";
+                    } else if (result.isDenied) {
+                        Swal.fire({
+                        title: "For Alvia!!",
+                        text : "Itu tuh jadi salah satu penyesalan buat gua, gua ngerasa jahat banget sama lu. Gua gatau harus gimana biar bisa nebus kesalahan gua waktu itu. Yang bisa gua lakuin sekarang tu cuma ngingetin lu. Mungkin lu ngerasa, kadang gua suka ngasih lu perhatian, semuanya gua lakuin karna gua gamau lu ngerasa sendiri, gua pengen lu tuh sadar, kalo lu masih punya gua, atau lebih tepatnya lu masih punya kita. Gua gamau lu ngerasa sendiri, kalo seandainya apa yang gua lakuin ini berlebihan buat lu, gua minta maaf yaa, gua bener² cuma pengen tunjukin kalo masi ada yang perhatian sama lu, gua tu gamau lu ngerasa ga ada yang merhatiin lu, karna ya bapa lu sibuk kerja, sedangkan ibu lu uda meninggal, makanya gua ga mau lu ngerasa begitu. Gua ngomong begini karna gua ngerasa ngerti, bisa dibilang gua juga ngalemin hal yang sama walaupun beda cerita. Gua yang ditinggal bapa gua dan harus hidup tanpa tau gimana rasanya disayang bapa sendiri, perhatian emak gua yang mungkin cuma setengah karna mak gua sibuk kerja. Gua ngalemin itu bertahun tahun dan gua tau gimana rasanya, makanya gua berusaha buat bisa perhatian sama lu, supaya lu ngga ngerasa sepii. Sekali lagi maaf yaa kalo gua berlebihan.",
+                        confirmButtonText : "back",
+                    }).then((result) => {
+                        if(result.isConfirmed) {
+                            Alvia()
+                        }
+                    });
+                    }
+                });
+            };
+
+            function Ayun(){
+                Swal.fire({
+                    title: "For Ayunn!!",
+                    text : "Lu tau gasi kadang gua ngerasa harus minta maaf gitu ke lu. Mungkin karna gua ngerasa waktu itu kita kayak agak sedikit berjarak.",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Next",
+                    denyButtonText: `lihat Selengkapnya...`,
+                    confirmButtonColor: '#3085d6',
+                    denyButtonColor : 'grey',
+                    cancelButtonColor : 'red',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "penutup.html";
+                    } else if (result.isDenied) {
+                        Swal.fire({
+                        title: "For Ayunn!!",
+                        text : "Dan alasan yang terpikirkan sama gua, mungkin karna dulu lu sempet sibuk banget karna lu ikut osis. Waktu itu tuh setiap kali kita mau main lu hampir selalu ga bisa ikut, sampe akhirnya karna gua kesel gua jadi ngediemin lu pas lu main, makanya gua ngerasa kayak agak renggang gitu. Cuma itu kan dulu, kalo sekarang gua udah ngerti, makanya mungkin itu jadi alasan kenapa kadang gua pengen minta maaf aja gitu ke lu. Dan yaa terlepas dari lu yang nyadarin itu atau ngga intinya gua minta maaf banget soal itu, pemikiran gua kayak bocah banget wkwkwk. Makasih juga soalnya waktu itu lu mau luangin waktu lu buat dengerin cerita gua, padahal lu ada opsi buat ga dateng, apalagi lu juga lagi sibuk banget harus bolak balik kerawang-bekasi, tapi lu milih buat tetep dateng. Sekali lagi makasihh, semangat yaa ngampusnya😁😁",
+                        confirmButtonText : "back",
+                    }).then((result) => {
+                        if(result.isConfirmed) {
+                            Ayun()
+                        }
+                    });
+                    }
+                });
+            };
+
+            function Ririn(){
+                Swal.fire({
+                    title: "For Ririn!!",
+                    text : "Hai rin, sehat kan? wkwkwk. Mungkin gak banyak yang bisa gua ketik disini buat lu, tapi makasih udah mau baca.",
+                    showDenyButton: true,
+                    showCancelButton: true,
+                    confirmButtonText: "Next",
+                    denyButtonText: `lihat Selengkapnya...`,
+                    confirmButtonColor: '#3085d6',
+                    denyButtonColor : 'grey',
+                    cancelButtonColor : 'red',
+                    reverseButtons: true
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = "penutup.html";
+                    } else if (result.isDenied) {
+                        Swal.fire({
+                        title: "For Ririn!!",
+                        text : "Gua tu menyadari 1 hal, mungkin kalo ga ada lu kita ga bakal bisa sampe selama ini. Karna, lu yang sering mulai chat digrup duluan terus ngajakin kita main, lu yang selalu mastiin kita bakal jadi main atau ngga, dan yaaa, ga semua orang bakal ngelakuin hal itu, tapi justru lu ngelakuin hal itu. Dan menurut gua itu adalah salah satu hal yang membuat kita bisa bertahan sampe sekarang. Makasih yaa karna udah mau ngelakuin hal itu dan jadi bagian dari kita. Jangan kapok ya buat selalu ngajakin kita main, walapun mungkin ga pada bisa, tapi seenggaknya kita tetep ada komunikasi dan ngga diem² aja😁😁",
+                        confirmButtonText : "back",
+                    }).then((result) => {
+                        if(result.isConfirmed) {
+                            Ririn()
+                        }
+                    });
+                    }
+                });
+            };
+
+
+       </script>
+
+
+            <audio class="song" autoplay loop>
+                <source src="alat dan bahan/upin ipin.mp3" type="audio/mp3">
+                </source>
+            </audio>
+
+</body>
+</html>
