@@ -278,6 +278,8 @@ img {
         font-size: 45px;
     }
     .password .input_wrap {
-        width: 300px
+        width: 220px
     }
+    .password .input_wrap .btn {
+        width: 255x
 }
