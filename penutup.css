@@ -1103,6 +1103,7 @@ header:after {
     width: 300px;
     margin-right: 0px;
     margin-top: 70px;
+    margin-bottom: 20px;
 }
 .bonus1 img {
     box-shadow: 0 0 40px #ffffff;
@@ -1118,8 +1119,8 @@ header:after {
     height: 70px;
 }
 .bonus2 {
-    width: 300px;
-    margin-top: 20px;
+    width: 170px;
+    margin: auto;
 }
 .bonus2 img {
     box-shadow: 0 0 40px #ffffff;
@@ -1127,7 +1128,7 @@ header:after {
 .bonus-3 {
     width: 70px;
     height: 70px;
-    margin-right: 156px;
+    margin-right: 126px;
     margin-left: 0px;
 }
 .bonus-4 {
@@ -1137,6 +1138,7 @@ header:after {
 .bonus3 {
     width: 300px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 .bonus3 img {
     box-shadow: 0 0 40px #ffffff;
@@ -1152,7 +1154,8 @@ header:after {
     height: 70px;
 }
 .bonus4 {
-    width: 300px;
+    width: 270px;
+    margin: auto;
     position: relative;
     margin-top: 20px;
     margin-left: 0px;
@@ -1164,7 +1167,7 @@ header:after {
 .bonus-7 {
     width: 70px;
     height: 70px;
-    margin-right: 156px;
+    margin-right: 126px;
     margin-left: 0px;
 }
 .bonus-8 {
@@ -1173,22 +1176,22 @@ header:after {
     margin-left: 0px;
 }
 .bonus5 {
-    width: 300px;
+    width: 250px;
     position: relative;
     margin-top: 20px;
-    margin-left: 0px;
+    margin-left: 15px;
     top: 0px;
 }
 .bonus5 img {
     box-shadow: 0 0 50px #ffffff;
 }
 .bonus-9 {
-    width: 140px;
-    height: 140px;
-    margin-right: 16px;
+    width: 113px;
+    height: 113px;
+    margin-right: 20px;
 }
 .bonus-10 {
-    width: 140px;
-    height: 140px;
+    width: 113px;
+    height: 113px;
 }
 }
