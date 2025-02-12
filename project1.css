@@ -173,7 +173,7 @@ img {
 }
 .password .input_wrap {
     margin-bottom: 20px;
-    width: 195px;
+    width: 215px;
     position: relative;
 }
 .password .input_wrap:last-child {
@@ -207,7 +207,7 @@ img {
     letter-spacing: 3px;
     color: #fff;
     background: #1dbf73;
-    width: 228px;
+    width: 248px;
 }
 
 @media (max-width:576px) {
