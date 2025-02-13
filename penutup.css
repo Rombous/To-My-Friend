@@ -952,13 +952,13 @@ header:after {
 /* 2022 hp */
 
 .container22-1 {
-    width: 300px;
+    width: 270px;
 }
 .container22-1 ul li .satu22 {
     width: 80px;
     height: 135px;
-    margin-left: 5px;
-    margin-right: 21px;
+    margin-left: 9px;
+    margin-right: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
     box-shadow: 0 0 30px #ffffff;
@@ -967,7 +967,7 @@ header:after {
     width: 80px;
     height: 135px;
     margin-left: 0px;
-    margin-right: 21px;
+    margin-right: 2px;
     margin-bottom: 0px;
     margin-top: 0px;
     box-shadow: 0 0 30px #ffffff;
@@ -975,8 +975,8 @@ header:after {
 .container22-1 ul li .tiga22 {
     width: 80px;
     height: 135px;
-    margin-left: 0px;
-    margin-right: 5px;
+    margin-left: 2px;
+    margin-right: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
     box-shadow: 0 0 30px #ffffff;
@@ -1003,19 +1003,20 @@ header:after {
 /* 2023 hp*/
 
 .container23-1 {
-    width: 300px;
+    width: 270px;
+    margin-left: 15px;
 }
 .container23-1 ul li .satu23 {
-    width: 96px;
-    height: 140px;
+    width: 86px;
+    height: 130px;
     margin-left: 0px;
     margin-right: 2px;
     margin-top: 40px;
     box-shadow: 0 0 10px #ffffff;
 }
 .container23-1 ul li .dua23 {
-    width: 96px;
-    height: 140px;
+    width: 86px;
+    height: 130px;
     margin-left: 0px;
     margin-right: 2px;
     box-shadow: 0 0 10px #ffffff;
@@ -1029,25 +1030,25 @@ header:after {
 }
 .container23-2 {
     width: 300px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .container23-2 ul li .empat23 {
-    width: 200px;
-    height: 108px;
+    width: 220px;
+    height: 128px;
     margin-left: 50px;
     margin-bottom: 10px;
     box-shadow: 0 0 10px #ffffff;
 }
 .container23-2 ul li .lima23 {
-    width: 200px;
-    height: 98px;
+    width: 220px;
+    height: 128px;
     margin-left: 50px;
     margin-bottom: 10px;
     box-shadow: 0 0 10px #ffffff;
 }
 .container23-2 ul li .enam23 {
-    width: 200px;
-    height: 79px;
+    width: 220px;
+    height: 109px;
     margin-left: 50px;
     box-shadow: 0 0 10px #ffffff;
 }
@@ -1080,14 +1081,15 @@ header:after {
     box-shadow: 0 0 20px #ffffff;
 }
 .container24-2 {
-    width: 300px;
+    width: 270px;
     margin-top: 10px;
+    margin-left: 15px;
 }
 .container24-2 ul li .empat24 {
     width: 114px;
     height: 150px;
     margin-left: 0px;
-    margin-right: 68px;
+    margin-right: 38px;
     box-shadow: 0 0 20px #ffffff;
 }
 .container24-2 ul li .lima24 {
@@ -1119,7 +1121,7 @@ header:after {
     height: 70px;
 }
 .bonus2 {
-    width: 170px;
+    width: 270px;
     margin: auto;
 }
 .bonus2 img {
@@ -1179,7 +1181,7 @@ header:after {
     width: 250px;
     position: relative;
     margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 25px;
     top: 0px;
 }
 .bonus5 img {
