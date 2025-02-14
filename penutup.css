@@ -837,16 +837,17 @@ header:after {
 .overlayFoto .close {
     padding-left: 280px;
     font-size: 30px;
+    top: 70px;
 }
 .overlayFoto21 .close {
     padding-left: 240px;
     font-size: 30px;
-    top: 30px;
+    top: 70px;
 }
 .overlayFoto22 .close {
     padding-left: 280px;
     font-size: 30px;
-    top: 90px;
+    top: 130px;
 }
 .overlayFoto23 .close {
     padding-left: 280px;
@@ -856,7 +857,7 @@ header:after {
 .overlayFoto24 .close {
     padding-left: 250px;
     font-size: 30px;
-    top: 20px;
+    top: 60px;
 }
 .overlayBonus .close {
     padding-left: 260px;
