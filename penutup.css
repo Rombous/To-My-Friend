@@ -187,7 +187,7 @@ header:after {
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* overlay 2021 */
@@ -221,7 +221,7 @@ header:after {
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* overlay 2022 */
@@ -255,7 +255,7 @@ header:after {
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* overlay 2023 */
@@ -289,7 +289,7 @@ header:after {
     color: rgb(252, 252, 252);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* overlay 2024 */
@@ -323,7 +323,7 @@ header:after {
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* overlay bonus */
@@ -356,7 +356,7 @@ header:after {
     color: rgb(255, 0, 0);
     text-decoration: none;
     font-size: 50px;
-    font-family: 'MouldyCheeseRegular';
+    font-family: 'Lilita One';
 }
 
 /* style gambar */
@@ -1113,7 +1113,7 @@ header:after {
 .bonus-1 {
     width: 70px;
     height: 70px;
-    margin-right: 35px;
+    margin-right: 10px;
     margin-left: 70px;
 }
 .bonus-2 {
@@ -1121,7 +1121,7 @@ header:after {
     height: 70px;
 }
 .bonus2 {
-    width: 270px;
+    width: 300px;
     margin: auto;
 }
 .bonus2 img {
@@ -1130,8 +1130,8 @@ header:after {
 .bonus-3 {
     width: 70px;
     height: 70px;
-    margin-right: 126px;
-    margin-left: 0px;
+    margin-right: 78px;
+    margin-left: 40px;
 }
 .bonus-4 {
     width: 70px;
@@ -1148,7 +1148,7 @@ header:after {
 .bonus-5 {
     width: 70px;
     height: 70px;
-    margin-right: 35px;
+    margin-right: 10px;
     margin-left: 70px;
 }
 .bonus-6 {
@@ -1156,7 +1156,7 @@ header:after {
     height: 70px;
 }
 .bonus4 {
-    width: 270px;
+    width: 300px;
     margin: auto;
     position: relative;
     margin-top: 20px;
@@ -1169,8 +1169,8 @@ header:after {
 .bonus-7 {
     width: 70px;
     height: 70px;
-    margin-right: 126px;
-    margin-left: 0px;
+    margin-right: 78px;
+    margin-left: 40px;
 }
 .bonus-8 {
     width: 70px;
@@ -1178,22 +1178,23 @@ header:after {
     margin-left: 0px;
 }
 .bonus5 {
-    width: 250px;
+    width: 300px;
     position: relative;
     margin-top: 20px;
-    margin-left: 25px;
+    margin-left: 2px;
     top: 0px;
 }
 .bonus5 img {
     box-shadow: 0 0 50px #ffffff;
 }
 .bonus-9 {
-    width: 113px;
-    height: 113px;
-    margin-right: 20px;
+    width: 105px;
+    height: 105px;
+    margin-right: 10px;
+    margin-left: 35px;
 }
 .bonus-10 {
-    width: 113px;
-    height: 113px;
+    width: 105px;
+    height: 105px;
 }
 }
